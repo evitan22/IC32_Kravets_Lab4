@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Fredericka";
+    src:
+        url("Fonts/Fredericka_the_Great/fredericka-webfont.woff") format("woff"), url("Fonts/Fredericka_the_Great/fredericka-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Fonts/montserrat/Montserrat-Regular.woff2') format('woff2'), url('Fonts/montserrat/Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.bg1 {
+    background-image: url("Images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.phone {
+    float: right;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.smartphone {
+    float: right;
+}
+
+.smartphone img {
+    height: 50px;
+    width: 25px;
+}
+
+.phone-text {
+    float: left;
+    padding-right: 18px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+.numbers {
+    font-size: 23px;
+    letter-spacing: 4px;
+}
+
+.phone-number {
+    padding-top: 3px;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0px 30px;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.menu a:last-child {
+    padding-right: 0;
+}
+
+.menu a:hover{
+    color: brown;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-part {
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.logo-text {
+    font-family: Montserrat;
+    font-size: 57px;
+    letter-spacing: -3px;
+    position: relative;
+    padding-left: 80px;
+    margin: 40px 0 0;
+}
+
+.logo-text::before {
+    position: absolute;
+    width: 55px;
+    content: url(Images/leaf.png);
+    left: 0px;
+    top: -20px;
+}
+
+.logo-text::after {
+    position: absolute;
+    width: 90px;
+    content: url(Images/makaron.png);
+    left: 545px;
+    top: -35px;
+}
+
+.logo-text2 {
+    font-size: 90px;
+    font-family: Fredericka;
+    margin-left: -10px;
+}
+
+.logo-text3 {
+    font-size: 26px;
+    font-family: Montserrat;
+    margin-left: 50px;
+    border-bottom: 2px solid #ccb301;
+    display: inline-block;
+    padding-bottom: 30px;
+    font-weight: bolder;
+}
+
+.logo-text4 {
+    font-family: Fredericka;
+    display: inline-block;
+}
+
+.monday, .happy {
+    font-size: 19px;
+}
+
+.one-plus-one {
+    display: inline-block;
+    font-size: 56px;
+    font-family: Fredericka;
+    margin-left: 15px;
+}
+
+.order {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid black;
+    padding: 20px 40px;
+    background: none;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.order2 {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 25px 40px 20px;
+    background: #ffe001;
+    cursor: pointer;
+    margin: 35px 0 0 75px;
+    border: none;
+}
+
+.order3 {
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 18px 20px;
+    background: #ffe001;
+    cursor: pointer;
+    border: none;
+    width: 415px;
+    border-radius: 5px;
+    margin: 13px;
+}
+
+.bonus {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dish {
+    float: right;
+    margin-top: 0px;
+    margin-right: 190px;
+    position: relative;
+}
+
+.dish::before {
+    position: absolute;
+    content: url(Images/Tomato1.png);
+    left: -100px;
+    bottom: 20px;
+}
+
+.dish::after {
+    position: absolute;
+    width: 90px;
+    content: url(Images/leaf2.png);
+    right: -63px;
+    bottom: 30px;
+}
+
+.choose {
+    font-family: Fredericka;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.random {
+    font-size: 17px;
+    font-family: Montserrat;
+    margin: 15px 200px;
+    text-align: center;
+}
+
+.cards {
+    padding: 55px 70px;
+    position: relative;
+}
+
+.card {
+    width: 350px;
+    padding: 0px 50px;
+    display: inline-block;
+}
+
+.card .title {
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.spagetti {
+    position: absolute;
+    top: -215px;
+    left: -134px;
+}
+
+.choose-section {
+    position: relative;
+}
+
+.line {
+    height: 136px;
+    background-color: #e8e6a9;
+    position: absolute;
+    width: 100%;
+    margin: 118px -70px;
+    z-index: -1;
+}
+
+.desc {
+    font-family: Montserrat;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.reserve .title {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-family: Fredericka;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input-field {
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    padding: 22px 20px;
+    width: 375px;
+    display: inline-block;
+    margin: 13px;
+}
+
+.input-field::placeholder {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: black;
+}
+
+.form {
+    width: 900px;
+    margin: 65px auto;
+}
