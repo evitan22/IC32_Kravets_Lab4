@@ -98,8 +98,10 @@ body {
 
 .left-part {
     float: left;
-    margin-left: 30px;
+    padding-left: 30px;
     text-align: center;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .logo-text {
@@ -108,6 +110,7 @@ body {
     letter-spacing: -3px;
     position: relative;
     padding-left: 80px;
+    padding-right: 80px;
     margin: 40px 0 0;
 }
 
@@ -123,7 +126,7 @@ body {
     position: absolute;
     width: 90px;
     content: url(Images/makaron.png);
-    left: 545px;
+    right: 0;
     top: -35px;
 }
 
@@ -202,8 +205,15 @@ body {
 .dish {
     float: right;
     margin-top: 0px;
-    margin-right: 190px;
+    padding-right: 10%;
     position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.dish img {
+    max-width: 500px;
+    width: 100%;
 }
 
 .dish::before {
@@ -217,7 +227,7 @@ body {
     position: absolute;
     width: 90px;
     content: url(Images/leaf2.png);
-    right: -63px;
+    right: 0;
     bottom: 30px;
 }
 
@@ -238,12 +248,15 @@ body {
 .cards {
     padding: 55px 70px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .card {
-    width: 350px;
+    width: 30%;
     padding: 0px 50px;
-    display: inline-block;
 }
 
 .card .title {
@@ -315,6 +328,162 @@ body {
 }
 
 .form {
-    width: 900px;
     margin: 65px auto;
+    text-align: center;
+}
+
+.navicon {
+    width: 35px; 
+    height: 25px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.navicon span {
+    display: block;
+    height: 4px; 
+    width: 100%; 
+    background-color: #333; 
+    border-radius: 2px; 
+    transition: 0.3s; 
+}
+
+.navicon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navicon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navicon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navicon {
+    display: none;
+}
+
+@media (max-width: 1251px){
+    .left-part {
+        width: 100%;
+        margin: none;
+        float: none;
+    }
+    .dish {
+        float: none;
+        width: 500px;
+        margin: 0 auto;
+        padding: 40px 0 0;
+    }
+    .logo-text {
+        display: inline-block;
+    }
+    .dish::after {
+        left: 100%;
+        right: unset;
+    }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 55px 0;
+    }
+    .card {
+        width: 100%;
+        margin-top: 45px;
+    }
+    .card-inner {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .order2 {
+        margin: 35px 0 0;
+    }
+    .card.first {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navicon {
+        display: flex;
+        float: right;
+        margin-top: 22px;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-text {
+        font-size: 49px;
+    }
+    .logo-text2 {
+        font-size: 80px;
+    }
+    .logo-text3 {
+        font-size: 23px;
+    }
+    .one-plus-one {
+        font-size: 50px;
+    }
+    .dish {
+        width: 100%;
+        text-align: center;
+    }
+    .dish img {
+        max-width: 80%;
+    }
+    .dish::after {
+        content: none;
+    }
+    .dish::before {
+        content: none;
+    }
+    .phone {
+        display: none;
+    }
+    .logo-text::after {
+        content: none;
+    }
+    .logo-text::before {
+        content: none;
+    }
+    .logo-text3 {
+        margin-left: 0;
+    }
+    .random {
+        margin: 15px 140px;
+    }
+    .spagetti {
+        top: -153px;
+        left: -75px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navicon {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    .dish {
+        width: 100%;
+    }
+    .dish img {
+        max-width: 80%;
+    }
+    .logo-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
